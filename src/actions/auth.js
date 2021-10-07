@@ -9,6 +9,7 @@ import { googleAuthProvider } from "../firebase/firebase-config";
 import { types } from "../types/types";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { finishLoading, startLoading } from "./ui";
+import { noteLoguot } from './notes';
 
 
 export const startLoginEmailPassword = (email, password) => {
@@ -83,6 +84,7 @@ export const startLogout = () => {
         // An error happened.
       });
       dispatch( logout());
+      dispatch ( noteLoguot() )
   };
 };
 

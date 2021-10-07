@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import "animate.css"
 import { JournalApp } from './JournalApp';
 import './styles/styles.scss'
 
